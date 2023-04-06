@@ -26,17 +26,8 @@ SetCompressor /FINAL /SOLID lzma
 !include WinVer.nsh
 
 ; Modern UI
-!include "MUI2.nsh"
 !define MUI_ABORTWARNING
 !define MUI_ICON "MediaInfo.ico"
-
-; Installer pages
-!insertmacro MUI_PAGE_DIRECTORY
-!insertmacro MUI_PAGE_INSTFILES
-
-; Uninstaller pages
-!insertmacro MUI_UNPAGE_CONFIRM
-!insertmacro MUI_UNPAGE_INSTFILES
 
 ; Info
 VIProductVersion "${PRODUCT_VERSION4}"
